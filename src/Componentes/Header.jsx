@@ -19,6 +19,14 @@ const Header = ({mobileMenuOpen, setMobileMenuOpen}) => {
           title="Concept" 
           className="text-[#3A59D1]"
         />
+        <Dropdown 
+          title="UX/UI" 
+          className="text-[#3A59D1]"
+        />
+        <Dropdown 
+          title="About" 
+          className="text-[#3A59D1]"
+        />
       </div>
     </div>
   );
