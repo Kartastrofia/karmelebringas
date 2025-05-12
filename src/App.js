@@ -8,11 +8,11 @@ function App() {
       <div className='flex flex-col items-center justify-start w-full grow'>
         {/* Header */}
         <div className="flex flex-row items-center justify-start px-[32px] py-[16px] w-full bg-[#92CDFF]">
-          <SVG.KarmeleFill />
+          <SVG.KarmeleFill className='shadow-[0px_4px_4px_0px_#3A59D1]'/>
         </div>
         {/* Main Content */}
         <div className='flex items-center justify-center grow w-full bg-gradient-to-b from-[#069FD6] to-[#5EFADB]'>
-          <SVG.KarmeleFill width='302' height='95' color='#FFFFFF'/>
+          <SVG.KarmeleFill width='302' height='95' color='#FFFFFF' className='shadow-[0px_4px_4px_0px_#3A59D1]'/>
         </div>
       </div>
       {/* Footer */}
