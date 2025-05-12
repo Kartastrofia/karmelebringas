@@ -13,7 +13,7 @@ const Header = ({mobileMenuOpen, setMobileMenuOpen}) => {
       {/* IZQ */}
       <SVG.KarmeleFill/>
       {/* DER */}
-      <div className="flex flex-col items-start gap-[40px] justify-center">
+      <div className="flex flex-row items-start gap-[40px] justify-center">
         <Dropdown 
           items={menuItems} 
           title="Concept" 
