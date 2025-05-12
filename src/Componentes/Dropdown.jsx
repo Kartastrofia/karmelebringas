@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { ChevronDown, ChevronRight } from "lucide-react";
+import SVG from "../SVG/SVG";
 
 // Componente Dropdown
 const Dropdown = ({ items = [], title = "Menú", className = "" }) => {
@@ -35,10 +36,12 @@ const Dropdown = ({ items = [], title = "Menú", className = "" }) => {
           className="inline-flex justify-between items-center w-full rounded-md px-4 py-2 bg-white text-sm font-medium text-secondary hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
           onClick={toggleDropdown}
         >
-          {title}
-          <ChevronDown
-            className={`ml-2 h-5 w-5 transition-transform duration-200 ${isOpen ? 'transform rotate-180' : ''}`}
-          />
+            {title}
+            <div
+                className={`ml-2 h-5 w-5 transition-transform duration-200 ${isOpen ? 'transform rotate-180' : ''}`}
+            >
+                <SVG.HeartFill width="32" height="32"/>
+            </div>
         </button>
       </div>
 
@@ -57,11 +60,13 @@ const Dropdown = ({ items = [], title = "Menú", className = "" }) => {
                 onMouseLeave={() => setHoveredIndex(-1)}
               >
                 <span>{item.text}</span>
-                <ChevronRight
+                <div
                   className={`h-4 w-4 transform transition-all duration-300 ${
                     hoveredIndex === index ? 'translate-x-1 opacity-100 text-primary' : 'opacity-0 -translate-x-1'
                   }`}
-                />
+                >
+                    <SVG.HeartFill width="32" height="32"/>
+                </div>
               </a>
             ))}
           </div>
