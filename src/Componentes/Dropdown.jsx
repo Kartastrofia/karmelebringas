@@ -57,8 +57,6 @@ const Dropdown = ({ items = [], title = "Menú", className = "" }) => {
                 key={index}
                 href={item.link}
                 className="group flex justify-between items-center px-4 py-2 text-[24px] text-secondary hover:bg-gray-100 hover:text-primary transition-all duration-200"
-                onMouseEnter={() => setHoveredIndex(index)}
-                onMouseLeave={() => setHoveredIndex(-1)}
               >
                 <span>{item.text}</span>
               </a>
