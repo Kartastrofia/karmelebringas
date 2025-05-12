@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from "react";
-import { ChevronDown, ChevronRight } from "lucide-react";
 import SVG from "../SVG/SVG";
 
 // Componente Dropdown
