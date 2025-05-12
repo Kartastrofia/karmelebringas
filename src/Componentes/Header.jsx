@@ -3,9 +3,9 @@ import SVG from "../SVG/SVG";
 
 const Header = ({}) => {
   return (
-    <header className="flex flex-row items-center justify-start px-[32px] py-[16px] w-full bg-[#FFFFFF59]">
-      <SVG.KarmeleFill />
-    </header>
+    <div className="flex flex-row items-center justify-start px-[32px] py-[16px] w-full bg-[#92CDFF]">
+      <SVG.KarmeleFill/>
+    </div>
   );
 }
 
