@@ -1,5 +1,3 @@
-import React from "react";
-
 import KarmeleFill from "./Fill/KarmeleFill";
 
 const SVG = () => {
