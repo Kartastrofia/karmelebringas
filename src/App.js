@@ -2,6 +2,8 @@ import './App.css';
 import { useState } from 'react';
 import SVG from './SVG/SVG';
 import Header from './Componentes/Header';
+// Fonts
+import "@fontsource/konkhmer-sleokchher";
 
 function App() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
