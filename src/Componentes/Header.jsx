@@ -10,7 +10,7 @@ const Header = ({mobileMenuOpen, setMobileMenuOpen}) => {
     { text: "Nosotros", link: "/nosotros" },
     { text: "Contacto", link: "/contacto" }
   ];
-  
+
   return (
     <div className="flex flex-row items-center justify-between px-[32px] py-[16px] w-full bg-[#92CDFF]">
       {/* IZQ */}
@@ -20,7 +20,7 @@ const Header = ({mobileMenuOpen, setMobileMenuOpen}) => {
         <Dropdown 
           items={menuItems} 
           title="Menú" 
-          className="text-white"
+          className="text-[#3A59D1]"
         />
       </div>
     </div>

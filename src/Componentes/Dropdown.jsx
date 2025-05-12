@@ -37,7 +37,7 @@ const Dropdown = ({ items = [], title = "Menú", className = "" }) => {
         >
             {title}
             <div
-                className={`ml-2 h-5 w-5 transition-transform duration-200 ${isOpen ? 'transform rotate-180' : ''}`}
+                className={`transition-transform duration-200 ${isOpen ? 'transform rotate-180' : ''}`}
             >
                 <SVG.HeartFill width="32" height="32"/>
             </div>
