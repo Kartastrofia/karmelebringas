@@ -39,7 +39,7 @@ const Dropdown = ({ items = [], title = "Menú", className = "" }) => {
             <div
                 className={`transition-transform duration-200 ${isOpen ? 'transform rotate-180' : ''}`}
             >
-                <SVG.HeartFill width="32" height="32"/>
+                <SVG.HeartFill width="24" height="24" color="#3A59D1"/>
             </div>
         </button>
       </div>
@@ -54,7 +54,7 @@ const Dropdown = ({ items = [], title = "Menú", className = "" }) => {
               <a
                 key={index}
                 href={item.link}
-                className="group flex justify-between items-center px-4 py-2 text-sm text-secondary hover:bg-gray-100 hover:text-primary transition-all duration-200"
+                className="group flex justify-between items-center px-4 py-2 text-[24px] text-secondary hover:bg-gray-100 hover:text-primary transition-all duration-200"
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(-1)}
               >
