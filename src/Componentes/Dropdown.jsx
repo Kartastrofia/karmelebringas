@@ -61,13 +61,6 @@ const Dropdown = ({ items = [], title = "Menú", className = "" }) => {
                 onMouseLeave={() => setHoveredIndex(-1)}
               >
                 <span>{item.text}</span>
-                <div
-                  className={`h-4 w-4 transform transition-all duration-300 ${
-                    hoveredIndex === index ? 'translate-x-1 opacity-100 text-primary' : 'opacity-0 -translate-x-1'
-                  }`}
-                >
-                    <SVG.HeartFill width="32" height="32"/>
-                </div>
               </a>
             ))}
           </div>
