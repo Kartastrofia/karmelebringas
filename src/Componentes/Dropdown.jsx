@@ -1,6 +1,31 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
+import { ChevronDown, ChevronRight } from "lucide-react";
 
-const Dropdown = () => {
+// Componente Dropdown
+const Dropdown = ({ items = [], title = "Menú", className = "" }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [hoveredIndex, setHoveredIndex] = useState(-1);
+  const dropdownRef = useRef(null);
+
+  // Cierra el dropdown cuando se hace clic fuera de él
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleOutsideClick);
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, []);
+
+  // Toggle del dropdown
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div ref={dropdownRef} className={`relative inline-block text-left ${className}`}>
       {/* Botón del dropdown */}
@@ -44,6 +69,7 @@ const Dropdown = () => {
       )}
     </div>
   );
-}
+};
 
 export default Dropdown;
+
