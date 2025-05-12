@@ -16,7 +16,7 @@ const Header = ({mobileMenuOpen, setMobileMenuOpen}) => {
       <div className="flex flex-col items-start gap-[40px] justify-center">
         <Dropdown 
           items={menuItems} 
-          title="Menú" 
+          title="Concept" 
           className="text-[#3A59D1]"
         />
       </div>

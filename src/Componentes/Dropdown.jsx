@@ -32,7 +32,7 @@ const Dropdown = ({ items = [], title = "Menú", className = "" }) => {
       <div>
         <button
           type="button"
-          className="inline-flex justify-between items-center w-full rounded-md px-4 py-2 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+          className="inline-flex justify-between items-center w-full rounded-md px-4 py-2 gap-[12px] bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
           onClick={toggleDropdown}
         >
             <p className="text-[24px] font-bold">
