@@ -1,7 +1,5 @@
 import './App.css';
 import { useState } from 'react';
-import { useEffect } from 'react';
-import { useRef } from 'react';
 import SVG from './SVG/SVG';
 import Header from './Componentes/Header';
 
