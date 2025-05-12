@@ -3,28 +3,27 @@ import SVG from "../SVG/SVG";
 
 // Componente Dropdown
 const Dropdown = ({ items = [], title = "Menú", className = "" }) => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [hoveredIndex, setHoveredIndex] = useState(-1);
-  const dropdownRef = useRef(null);
+    const [isOpen, setIsOpen] = useState(false);
+    const dropdownRef = useRef(null);
 
-  // Cierra el dropdown cuando se hace clic fuera de él
-  useEffect(() => {
-    const handleOutsideClick = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setIsOpen(false);
-      }
+    // Cierra el dropdown cuando se hace clic fuera de él
+    useEffect(() => {
+        const handleOutsideClick = (event) => {
+        if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+            setIsOpen(false);
+        }
+        };
+
+        document.addEventListener("mousedown", handleOutsideClick);
+        return () => {
+        document.removeEventListener("mousedown", handleOutsideClick);
+        };
+    }, []);
+
+    // Toggle del dropdown
+    const toggleDropdown = () => {
+        setIsOpen(!isOpen);
     };
-
-    document.addEventListener("mousedown", handleOutsideClick);
-    return () => {
-      document.removeEventListener("mousedown", handleOutsideClick);
-    };
-  }, []);
-
-  // Toggle del dropdown
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
 
   return (
     <div ref={dropdownRef} className={`relative inline-block text-left ${className}`} style={{ fontFamily: "Konkhmer Sleokchher"}}>
