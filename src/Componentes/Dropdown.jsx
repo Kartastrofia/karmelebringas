@@ -27,7 +27,7 @@ const Dropdown = ({ items = [], title = "Menú", className = "" }) => {
   };
 
   return (
-    <div ref={dropdownRef} className={`relative inline-block text-left ${className}`}>
+    <div ref={dropdownRef} className={`relative inline-block text-left ${className}`} style={{ fontFamily: "Konkhmer Sleokchher";}}>
       {/* Botón del dropdown */}
       <div>
         <button

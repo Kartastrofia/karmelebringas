@@ -5,10 +5,7 @@ import Dropdown from "../Componentes/Dropdown";
 const Header = ({mobileMenuOpen, setMobileMenuOpen}) => {
   // Define tus opciones de menú
   const menuItems = [
-    { text: "Inicio", link: "/" },
-    { text: "Servicios", link: "/servicios" },
-    { text: "Nosotros", link: "/nosotros" },
-    { text: "Contacto", link: "/contacto" }
+    { text: "Snail Market", link: "/snailmarket" },
   ];
 
   return (
