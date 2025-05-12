@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import "@fontsource/konkhmer-sleokchher";
 import SVG from "../SVG/SVG";
 
 // Componente Dropdown
@@ -27,7 +28,7 @@ const Dropdown = ({ items = [], title = "Menú", className = "" }) => {
   };
 
   return (
-    <div ref={dropdownRef} className={`relative inline-block text-left ${className}`} style={{ fontFamily: "Konkhmer Sleokchher"}}>
+    <div ref={dropdownRef} className={`relative inline-block text-left ${className}`}>
       {/* Botón del dropdown */}
       <div>
         <button
@@ -35,7 +36,7 @@ const Dropdown = ({ items = [], title = "Menú", className = "" }) => {
           className="inline-flex justify-between items-center w-full rounded-md px-4 py-2 gap-[12px] bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
           onClick={toggleDropdown}
         >
-            <p className="text-[24px] font-bold">
+            <p className="text-[24px] " style={{ fontFamily: "Konkhmer Sleokchher"}}>
                 {title}
             </p>
             <div
