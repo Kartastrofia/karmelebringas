@@ -9,7 +9,7 @@ import Inicio from './Paginas/Inicio';
 import "@fontsource/konkhmer-sleokchher";
 
 function App() {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    
 
   return (
       <Router>

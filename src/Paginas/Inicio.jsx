@@ -3,6 +3,7 @@ import Separador from '../Componentes/Separador';
 import Header from '../Componentes/Header';
 
 const Inicio = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <>
         <div className='flex flex-col items-center justify-start w-full grow bg-gradient-to-b from-[#069FD6] to-[#5EFADB]'>
