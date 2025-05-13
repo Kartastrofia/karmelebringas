@@ -1,4 +1,3 @@
-import SVG from '../SVG/SVG';
 
 const Separador = ({className}) => {
   return (
