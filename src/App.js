@@ -1,5 +1,4 @@
 import './App.css';
-import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SVG from './SVG/SVG';
 import Header from './Componentes/Header';
