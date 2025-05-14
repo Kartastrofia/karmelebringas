@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Bulgatti';
+  src: url('./Fonts/Bulgatti.otf') format('opentype');
+  /* Si la fuente está en public/fonts/ */
+  
+  /* O si la colocaste en src/assets/fonts/ */
+  /* src: url('../assets/fonts/Bulgatti.otf') format('opentype'); */
+  
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Para mejorar el rendimiento de carga */
+}
+
+.font-bulgatti {
+  font-family: 'Bulgatti', sans-serif;
+}
+
 .App {
   text-align: center;
 }
