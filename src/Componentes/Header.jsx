@@ -9,8 +9,8 @@ const Header = ({mobileMenuOpen, setMobileMenuOpen}) => {
   ];
 
   return (
-    <div className="relative flex flex-col items-center justify-center max-w-7xl">
-      <div className="relative flex flex-row items-center justify-between w-full">
+    <div className="relative flex flex-col items-center justify-center max-w-7xl w-full px-[24px] ">
+      <div className="flex flex-row items-center justify-between w-full">
         {/* IZQ */}
         <SVG.KarmeleFill color="#3A59D1"/>
         {/* DER */}
