@@ -9,25 +9,28 @@ const Header = ({mobileMenuOpen, setMobileMenuOpen}) => {
   ];
 
   return (
-    <div className="flex flex-row items-center justify-between px-[32px] py-[16px] w-full bg-[#92CDFF]">
-      {/* IZQ */}
-      <SVG.KarmeleFill/>
-      {/* DER */}
-      <div className="flex flex-row items-start gap-[40px] justify-center">
-        <Dropdown 
-          items={menuItems} 
-          title="Concept" 
-          className="text-[#3A59D1]"
-        />
-        <Dropdown 
-          title="UX/UI" 
-          className="text-[#3A59D1]"
-        />
-        <Dropdown 
-          title="About" 
-          className="text-[#3A59D1]"
-        />
+    <div className="relative flex flex-col items-center justify-center max-w-7xl">
+      <div className="relative flex flex-row items-center justify-between">
+        {/* IZQ */}
+        <SVG.KarmeleFill color="#3A59D1"/>
+        {/* DER */}
+        <div className="flex flex-row items-start gap-[40px] justify-center">
+          <Dropdown 
+            items={menuItems} 
+            title="Concept" 
+            className="text-[#3A59D1]"
+          />
+          <Dropdown 
+            title="UX/UI" 
+            className="text-[#3A59D1]"
+          />
+          <Dropdown 
+            title="About" 
+            className="text-[#3A59D1]"
+          />
+        </div>
       </div>
+      {/* SVG LINEA */}
     </div>
   );
 }

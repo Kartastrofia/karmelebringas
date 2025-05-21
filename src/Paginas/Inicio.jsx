@@ -7,8 +7,8 @@ const Inicio = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <>
-        <div className='flex flex-col items-center justify-start w-full grow bg-gradient-to-b from-[#069FD6] to-[#5EFADB]'>
-          <Separador className='h-[120px]'/>
+        <div className='flex flex-col items-center justify-start w-full grow bg-[#FFFFFF]'>
+          <Separador className='h-[80px]'/>
           {/* Header */}
           <Header mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen}/>
           {/* Main Content */}
